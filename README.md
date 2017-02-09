@@ -11,8 +11,7 @@ Configurate several node of JBOSS Fuse 6.3 Sandbox
 6. EXPORT SUB_PASSWORD = ~YOUR_RED_HAT_PASSOWRD~; (for registration your redhat OS)
 7. download jboss-fuse-karaf-6.3.0.redhat-187.zip from redhat portal
 8. mkdir binary put jboss fuse zip file there
-9. vagrant up
-10. wait
-11. SSH to node1 to create ensamble
-12. /home/vagrant/jboss-fuse-6.3.0.redhat-187/bin/client
-13. fabric:ensemble-add node2 node3 (run it at karaf terminal)
+9. vagrant up (wait for a while to vagrant provisioning all)
+10. SSH to node1 to create ensamble
+11. /home/vagrant/jboss-fuse-6.3.0.redhat-187/bin/client
+12. fabric:ensemble-add --zookeeper-data-dir zkdata node2 node3 (run it at karaf terminal)
