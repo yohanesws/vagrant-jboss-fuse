@@ -88,7 +88,7 @@ Vagrant.configure(2) do |config|
     node1.vm.provision :shell, path: "scripts/environment.sh"
     node1.vm.provision :shell, path: "scripts/fuse.sh"
     node1.vm.provision :shell, path: "scripts/node1.sh"
-    node1.vm.network "private_network", ip: "10.1.2.2"
+    node1.vm.network "private_network", ip: "172.16.1.2"
   end
   config.vm.define "fabricnode2" do |node2|
     node2.vm.base_mac = "5CA1AB1E0002"
@@ -96,7 +96,7 @@ Vagrant.configure(2) do |config|
     node2.vm.provision :shell, path: "scripts/environment.sh"
     node2.vm.provision :shell, path: "scripts/fuse.sh"
     node2.vm.provision :shell, path: "scripts/node2.sh"
-    node2.vm.network "private_network", ip: "10.1.2.3"
+    node2.vm.network "private_network", ip: "172.16.1.3"
   end
   config.vm.define "fabricnode3" do |node3|
     node3.vm.base_mac = "5CA1AB1E0003"
@@ -104,7 +104,7 @@ Vagrant.configure(2) do |config|
     node3.vm.provision :shell, path: "scripts/environment.sh"
     node3.vm.provision :shell, path: "scripts/fuse.sh"
     node3.vm.provision :shell, path: "scripts/node3.sh"
-    node3.vm.network "private_network", ip: "10.1.2.4"
+    node3.vm.network "private_network", ip: "172.16.1.4"
   end
 
 end

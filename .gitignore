@@ -39,3 +39,4 @@ Thumbs.db
 #Vagrant
 .vagrant
 .vagrant*
+*.box
