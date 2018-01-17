@@ -1,5 +1,8 @@
 #Jboss Fuse Sandbox using vagrant
 
+if using different vagrant file
+export VAGRANT_VAGRANTFILE=Vagrantemptybox
+
 Configurate several node of JBOSS Fuse 6.3 Sandbox
 
 ##How To run it
